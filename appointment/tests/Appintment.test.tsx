@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ReactTestUtils from "react-dom/test-utils";
-import AppointmentsDayView from "../src/AppointmentsDayView";
+import AppointmentsDayView from "../src/components/AppointmentsDayView";
 
 describe("AppointmentsDayView", () => {
   let container: HTMLElement;

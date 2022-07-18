@@ -5,4 +5,6 @@ export interface Customer {
 export interface AppointmentItem {
   startsAt: number;
   customer: Customer;
+  phone?: string;
+  notes?: string;
 }

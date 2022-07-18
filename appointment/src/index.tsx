@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
-import AppointmentsDayView from './AppointmentsDayView';
-import { sampleAppointments } from './SampleAppointments';
+import AppointmentsDayView from './components/AppointmentsDayView';
+import { sampleAppointments } from './sampleData/SampleAppointments';
 
     ReactDOM.render(
         <AppointmentsDayView appointments={sampleAppointments}/>,

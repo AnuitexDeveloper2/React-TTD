@@ -1,0 +1,46 @@
+.app-wrapper {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid black;
+  #appointmentsDayView {
+    padding-right: 20px;
+    border-right: 2px solid black;
+    .appointment-item {
+      margin-bottom: 10px;
+      list-style-type: none;
+      button {
+        background-color: rgb(92, 119, 150);
+        color: #ffff;
+        border: none;
+        padding: 3px 12px;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .appointment-details {
+    padding: 0 20px;
+  }
+}
+
+.appointmentsDayView {
+  width: 100px;
+}
+
+.appointment-container {
+  .appointment-date {
+    font-size: 24px;
+    font-family: sans-serif;
+  }
+}
+
+.appointment-detail {
+  margin-top: 20px;
+  .appointment-detail-title {
+    text-decoration: underline;
+    margin-right: 10px;
+  }
+}
