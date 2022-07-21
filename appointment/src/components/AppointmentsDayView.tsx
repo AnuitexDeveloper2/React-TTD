@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Appointment from "./Appointment";
 import { AppointmentItem } from "../types/Appointment";
 
-// import "./index.scss";
+import "./index.scss";
 import { parseDate } from "../helper/DateFormat";
 
 const AppointmentsDayView: React.FC<{ appointments: AppointmentItem[] }> = ({

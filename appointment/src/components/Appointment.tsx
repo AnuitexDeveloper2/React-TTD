@@ -3,7 +3,7 @@ import { parseDate } from "../helper/DateFormat";
 import { AppointmentItem } from "../types/Appointment";
 import AppointmentDetail from "./AppointmentDetail";
 
-// import "./index.scss";
+import "./index.scss";
 
 interface Props {
   appointment: AppointmentItem;

@@ -6,9 +6,6 @@
   "browser": {
     "[module-name]": false
   },
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
   "scripts": {
     "test": "jest",
     "build": "webpack --config webpack/webpack.config.js",

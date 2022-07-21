@@ -1,6 +1,8 @@
+import { AppointmentItem } from "../types/Appointment";
+
 const today = new Date();
 const at = (hours: number) => today.setHours(hours, 0);
-export const sampleAppointments = [
+export const sampleAppointments: AppointmentItem[] = [
   { startsAt: at(9), customer: { firstName: "Charlie" } },
   { startsAt: at(10), customer: { firstName: "Frankie" } },
   { startsAt: at(11), customer: { firstName: "Casey" } },

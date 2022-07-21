@@ -1,0 +1,19 @@
+.form-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  .customer-form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 15px;
+    input[type=submit] {
+        grid-column: 2/-1;
+        color: #ffff;
+        border: none;
+        background-color: #aaccdd;
+        cursor: pointer;
+      }
+  }
+
+}
