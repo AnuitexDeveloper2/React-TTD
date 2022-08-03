@@ -8,6 +8,10 @@ describe("<CustomerForm/>", () => {
   let render: (component: JSX.Element) => void;
   let container: HTMLDivElement;
 
+  beforeEach(() => {
+    ({ render, container } = createContainer());
+  });
+
   const form = (id: string) => container.querySelector(`form[id=${id}]`);
 
   const field = (name: string) =>
@@ -100,7 +104,7 @@ describe("<CustomerForm/>", () => {
           value: value,
         };
         await ReactTestUtils.Simulate.change(currentField, {
-          target: targetValue,
+          currentTarget: targetValue,
         });
       }
       const currentForm = form("customer");
@@ -108,9 +112,7 @@ describe("<CustomerForm/>", () => {
         await ReactTestUtils.Simulate.submit(currentForm);
       }
     });
-  beforeEach(() => {
-    ({ render, container } = createContainer());
-  });
+ 
 
   it("renders a form", () => {
     render(<CustomerForm />);

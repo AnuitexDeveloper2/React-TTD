@@ -1,5 +1,5 @@
 import React from "react";
-import { parseDate } from "../helper/DateFormat";
+import { parseDate } from "../helper/DateHelper";
 import { AppointmentItem } from "../types/Appointment";
 import AppointmentDetail from "./AppointmentDetail";
 
